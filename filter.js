@@ -20,8 +20,14 @@ const people = [
       age: 18,
     },
   ];
+
+  const oldEnough = people.filter(person => person.age >= 21);
+  console.log(oldEnough);
   
-  
+
+  const paul = people.filter(i => i.name === "Paul")[0];
+  console.log(paul);
+
   // Complex Filtering
   const students = [
     {
@@ -55,18 +61,18 @@ const people = [
       ]
     },
   ];
-  Footer
-  © 2023 GitHub, Inc.
-  Footer navigation
-  Terms
-  Privacy
-  Security
-  Status
-  Docs
-  Contact GitHub
-  Pricing
-  API
-  Training
-  Blog
-  About
+//   Footer
+//   © 2023 GitHub, Inc.
+//   Footer navigation
+//   Terms
+//   Privacy
+//   Security
+//   Status
+//   Docs
+//   Contact GitHub
+//   Pricing
+//   API
+//   Training
+//   Blog
+//   About
   
