@@ -61,18 +61,19 @@ const people = [
       ]
     },
   ];
-//   Footer
-//   © 2023 GitHub, Inc.
-//   Footer navigation
-//   Terms
-//   Privacy
-//   Security
-//   Status
-//   Docs
-//   Contact GitHub
-//   Pricing
-//   API
-//   Training
-//   Blog
-//   About
-  
+
+  const has5yearsExp = skill => skill.yrsExperience >= 5;
+  const hasStrongSkills = student => student.skills.filter(has5yearsExp).length > 0;
+
+  // const hasStrongSkills = student => {
+  //   let strongSkills = student.skills.filter(skill => skill.yrsExperience >= 5);
+  //   return strongSkills.length > 0;
+  // };
+
+  // const candidates = students.filter(student => {
+  //   let strongSkills = student.skills.filter(skill => skill.yrsExperience >= 5);
+  //   return strongSkills.length > 0;
+  // });
+  const candidates = students.filter(hasStrongSkills);
+  console.log(candidates);
+
